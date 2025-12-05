@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power BI Embed Sample</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .auth-section {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    #user-info {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+    .report-section {
+      margin-top: 20px;
+    }
+    .report-buttons {
+      margin-bottom: 15px;
+    }
+    .report-buttons button {
+      background: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    .report-buttons button:hover {
+      background: #106ebe;
+    }
+    .report-buttons button.active {
+      background: #004578;
+    }
+    #embedContainer {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Power BI User-Owns-Data Sample</h1>
+  
+  <div id="user-info" class="hidden">
+    <p>Signed in as: <strong id="user-name"></strong></p>
+  </div>
+
+  <div id="report-section" class="report-section hidden">
+    <div id="report-buttons" class="report-buttons"></div>
+    <div id="embedContainer"></div>
+  </div>
+
+  <!-- MSAL library from CDN -->
+  <script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
+  
+  <!-- Power BI client library -->
+  <script src="/node_modules/powerbi-client/dist/powerbi.min.js"></script>
+  
+  <!-- App scripts -->
+  <script src="/js/authConfig.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/embed.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
