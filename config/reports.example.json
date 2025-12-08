@@ -1,0 +1,16 @@
+{
+  "reports": [
+    {
+      "id": "YOUR_REPORT_1_ID",
+      "name": "Report 1",
+      "workspaceId": "YOUR_WORKSPACE_ID",
+      "pageName": "ReportSection1"
+    },
+    {
+      "id": "YOUR_REPORT_2_ID",
+      "name": "Report 2",
+      "workspaceId": "YOUR_WORKSPACE_ID",
+      "pageName": "ReportSection1"
+    }
+  ]
+}

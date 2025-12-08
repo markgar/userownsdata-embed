@@ -1,0 +1,6 @@
+# Dependencies
+node_modules/
+
+# Local config files with secrets
+config/auth.json
+config/reports.json
